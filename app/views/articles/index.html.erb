@@ -1,0 +1,11 @@
+<h1>Latest Articles</h1>
+
+  <%= link_to new_article_path do %>
+    <span>+ Add a new article</span>
+  <% end %>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li><%= link_to article.title, article_path(article) %></li>
+  <% end %>
+</ul>

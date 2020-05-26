@@ -1,8 +1,11 @@
 <h1><%= @article.title %></h1>
+<div class="container d-flex align-items-center justify-content-between my-4">
+  <%= link_to "Edit this article", edit_article_path, class: "btn btn-primary" %>
+  <%= link_to "Delete this article", article_path(@article), class: "btn btn-danger", method: :delete, data: { confirm: "Are you sure?" } %>
+</div>
 
-<%= link_to "Edit this article", edit_article_path %>
-<%= link_to "Delete this article", article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %>
+<div class="container">
+  <p><%= @article.content %></p>
 
-<p><%= @article.content %></p>
-
-<%= link_to "<- Back", articles_path %>
+<%= link_to "<- Back", articles_path, class: "btn btn-secondary col-2 mt-4" %>
+</div>

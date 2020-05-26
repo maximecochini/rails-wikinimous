@@ -14,3 +14,28 @@
  *= require_self
  */
 @import "bootstrap/scss/bootstrap";
+
+body {
+  padding: 50px;
+}
+
+.list-group li {
+  list-style: none;
+}
+.list-group-item {
+  border-bottom: none;
+}
+.list-group li:first-child .list-group-item {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+.list-group li:last-child .list-group-item {
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);;
+}
+
+
+.list-group p {
+  margin-bottom: 0;
+}

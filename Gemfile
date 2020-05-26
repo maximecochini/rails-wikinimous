@@ -27,6 +27,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # Faker
 gem 'faker'
+# Simple Form
+gem 'simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
